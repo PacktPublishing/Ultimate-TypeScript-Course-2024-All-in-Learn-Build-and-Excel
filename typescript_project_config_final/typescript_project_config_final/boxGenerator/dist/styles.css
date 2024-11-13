@@ -1,0 +1,91 @@
+/* Declare global CSS variables */
+:root {
+    --padding: 15px; /* Default padding value */
+    --white: #fff;
+    --disabled_bg: #ff6d6d; /* Default disabled bg color for buttons and input when BOMB is activated */
+}
+
+/* apply some basic styles universally using the "universal selector" in CSS */
+* {
+    box-sizing: border-box;
+    background-color: #d7d7d7;
+  }
+
+body {
+  color: #333;
+  font-family: consolas;
+  margin: 0; /* I  like applying my own margins later, so set this to 0 here */
+}
+
+.wrapper {
+  padding: 2em;
+}
+
+.box {
+  margin: .7em;
+  transition: all 500ms;
+}
+
+.box:hover {
+  transform: scale(1.5);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.init {
+  padding-bottom: 100px;
+  text-align: center;
+}
+  
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-bottom: 2em;
+  font-weight: 100;
+  font-size: larger;
+}
+
+input[type="text"] {
+  background-color: var(--white);
+  border: none;
+  padding: var(--padding);
+}
+
+button#generate {
+  padding: var(--padding);
+  background-color: purple;
+  border: none;
+  color: var(--white);
+  transition: all 500ms;
+}
+
+button#generate:hover {
+  background: rgb(18, 61, 201);
+  color: var(--white);
+  transform: scale(1.2);
+}
+
+/* style the <output> elment where we will insert boxes into */
+output {
+  display: block;
+  margin-top: 1em;
+}
+
+/* when bomb occurs, diable input and button  */
+input[type="text"].lost {
+  background-color: var(--disabled_bg);
+}
+
+button#generate:disabled {
+  background-color: var(--disabled_bg);
+  color: #333;
+  cursor: not-allowed; /* Change cursor to indicate disabled */
+}
+
+button#generate:disabled:hover {
+  transform: scale(1);
+  background-color: var(--disabled_bg);
+  cursor: not-allowed; /* Keep cursor as not-allowed */
+}

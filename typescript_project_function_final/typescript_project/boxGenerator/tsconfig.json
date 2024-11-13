@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "ES6",
+        "noUnusedLocals": false // you can set this to true at end of project
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- always good to have a wrapper -->
+    <div class="wrapper">
+        <div class="init">
+          <h1>Random Box Generator</h1>
+          <h2>How many boxes can you generate before 💥 BOOM 💥</h2>
+          <input type="text" placeholder="Enter amount" id="amount" autocomplete="off">
+          <button id="generate">Generate Boxes</button>
+          <!-- We will insert our generated boxes into the <output> tag, using TS (later) -->
+          <output></output>
+        </div>
+      </div>
+      <!-- reference your JavaScript file, as browsers do not understand .ts extensions -->
+       <!-- this file does not exist yet. We will create it dynamically using the TSC comipiler (later) -->
+      <script src="./script.js"></script> 
+</body>
+</html>
+

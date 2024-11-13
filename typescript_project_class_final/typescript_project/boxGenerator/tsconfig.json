@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "ES6",
+        "noUnusedLocals": true
+    },
+    "exclude": [
+        "./src/script-function.ts",
+        "./src/modules/box-function.ts"
+    ]
+}
